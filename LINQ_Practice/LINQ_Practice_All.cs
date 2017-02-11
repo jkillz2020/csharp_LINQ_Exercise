@@ -51,7 +51,7 @@ namespace LINQ_Practice
         [TestMethod]
         public void DoAllCohortsHaveActivePrimaryInstructors()
         {
-            var doAll = PracticeData.All(cohort => cohort.Active == true);
+            var doAll = PracticeData.All(cohort => cohort.PrimaryInstructor.Active == true);
             Assert.IsTrue(doAll); //<-- change true to doAll
         }
 
